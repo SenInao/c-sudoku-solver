@@ -105,7 +105,10 @@ int checkPuzzle(Square *** sudoku, Box ** boxes) {
     }
   }
 
-  return boxSingles(sudoku, boxes);
+  if (boxSingles(sudoku, boxes)) {
+    return 1;
+  }
+  return checkRows(sudoku);
 }
 
 int ** createPuzzle() {

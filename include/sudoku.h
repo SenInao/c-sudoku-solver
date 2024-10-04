@@ -45,4 +45,6 @@ int boxSingles(Square *** sudoku, Box ** boxes);
 
 Box ** createBoxes();
 
+int checkRows(Square *** sudoku);
+
 #endif
